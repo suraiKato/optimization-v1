@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAF2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant-Garamond';
+}
+
+p, a {
+    font-family: 'Raleway';
+}
+
+img {
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    padding: 30px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h3,
+footer h3 {
+    font-size: 26px;
+    color: #3C493F;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+nav ul li a {
+    font-size: 14px;
+    color: #3C493F;
+}
+
+nav .button-login {
+    color: #FAFAF2;
+    background-color: #3C493F;
+    padding: 10px 24px;
+    font-size: 12px;
+}
+
+.hero-sec {
+    position: relative;
+}
+
+.hero-sec img {
+    width: 100%;
+}
+
+.hero-sec .main-text {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 200px;
+    right: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-text h1 {
+    color: #FAFAF2;
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main-text .button-join {
+    color: #FAFAF2;
+    background-color: #3C493F;
+    padding: 14px 28px;
+    font-size: 14px;
+}
+
+.advantages {
+    margin-top: 150px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.advantages .advantage {
+    width: 30%;
+    background-color: #C6A15B;
+}
+
+.advantage .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.advantage .content i {
+    font-size: 56px;
+    color: #C6A15B;
+    background-color: #FAFAF2;
+    padding: 15px;
+    
+}
+
+.advantage .content p {
+    font-size: 18px;
+    color: #FAFAF2;
+    font-weight: 500;
+    text-align: center;
+}
+
+.help-main {
+    padding: 0 80px;
+    margin-top: 100px;
+}
+
+.help-main h2,
+.market-main h2 {
+    font-size: 44px;
+    color: #3C493F;
+    text-align: center;
+    font-weight: 500;
+}
+
+.help-main .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.help-main .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C493F;
+    gap: 20px;
+    padding-right: 15px;
+    width: 45%;
+} 
+
+.help-main .cards .card img {
+    width: 245px;
+    height: 367px;
+}
+
+.help-main .cards .card .describe,
+.help-list .cards .card .describe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.help-main .cards .card .describe h3 {
+    color: #FAFAF2;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.help-main .cards .card .describe > p {
+    font-size: 14px;
+    color: #EDEDED;
+    font-weight: 300;
+}
+
+.help-main .cards .card .describe .author p.name {
+    font-size: 14px;
+    color: #EDEDED;
+    font-style: italic;
+}
+
+.help-main .cards .card .describe .author p.rank {
+    font-size: 12px;
+    color: #EDEDED;
+    font-style: italic;
+}
+
+.help-main .cards .card .describe a.button-read,
+.market-main .cards .card a.button-read {
+    font-size: 14px;
+    background-color: #C6A15B;
+    color: #FAFAF2;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.market-main {
+    margin-top: 100px;
+    padding: 0 80px;
+}
+
+.market-main .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.market-main .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3E2F1C;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.market-main .cards .card img {
+    width: 100%;
+    height: 240px;
+}
+
+.market-main .cards .card h4 {
+    font-size: 36px;
+    font-family: 'Carmorant-Garamont';
+    color: #FAFAF2;
+    font-weight: 500;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 30px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+footer .copy .icons {
+    display: flex;
+    gap: 20px;
+}
+
+footer .copy .icons a i {
+    font-size: 24px;
+    color: #3C493F;
+}
+
+footer .copy p {
+    font-size: 12px;
+    color: #3C493F;
+    font-weight: 300;
+}
+
+footer > p {
+    font-size: 16px;
+    color: #3C493F;
+}
+
+.hero-sec input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    padding: 22px 26px;
+    background-color: rgba(255, 255, 255, .8);
+    outline: none;
+    border: none;
+    color: #3C493F;
+}
+
+.hero-sec input::placeholder {
+    color: #3C493F;
+    font-size: 15px;
+}
+
+.help-list .cards {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.help-list .cards .card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.green {
+    background-color: #3C493F;
+}
+
+.light-green {
+    background-color: #89B86E;
+}
+
+.yellow {
+    background-color: #C6A15B;
+}
+
+.brown {
+    background-color: #3E2F1C;
+}
+
+.help-list .cards .card .describe h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #FAFAF2;
+}
+
+.help-list .cards .card .describe p {
+    width: 75%;
+    font-size: 18px;
+    color: #EDEDED;
+    font-weight: 500;
+}
+
+.help-list .cards .card .describe a {
+    width: fit-content;
+    padding: 10px 18px;
+    color: #FAFAF2;
+    font-size: 18px;
+}
+
+/* market */
+
+
+.market-list,
+.help-list {
+    padding: 0 80px;
+    margin-top: 100px;
+}
+
+.market-list .categories,
+.help-list .categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+}
+
+.market-list .categories a,
+.help-list .categories a {
+    color: #3C493F;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.market-list .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.market-list .cards .card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    align-items: center;
+    gap: 30px;
+    background-color: #3C493F;
+    width: 30%;
+}
+
+.market-list .cards .card h3 {
+    color: #FAFAF2;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.market-list .cards .card p {
+    font-size: 14px;
+    color: #EDEDED;
+    text-align: center;
+}
+
+.market-list .cards .card p.price {
+    font-size: 22px;
+    color: #FAFAF2;
+    font-weight: 500;
+}
+
+.market-list .cards .card img {
+    height: 150px;
+    width: 180px;
+}
+
+/* about */
+
+.founder {
+    padding: 0 150px;
+    margin-top: 100px;
+}
+
+.founder h3 {
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #3C493F;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.founder .content {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.founder .content .right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+}
+
+.founder .content .right h4 {
+    color: #3C493F;
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.founder .content .right > p {
+    color: #3C493F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.founder .content .right .words {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #3C493F;
+    padding: 30px;
+}
+
+.founder .content .right .words p {
+    color: #FAFAF2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.founder .content .right .words p.italic {
+    font-style: italic;
+    color: #EDEDED;
+}
+
+
+
+
+
+
+
