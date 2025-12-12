@@ -51,8 +51,20 @@ nav ul {
 }
 
 nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
     color: #3C493F;
+    transition: all 0.3s ease;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li a.active {
+    border-bottom: 1px solid #3C493F;
+}
+
+nav ul li a:hover {
+    color: #89B86E;
+    border-bottom: 1px solid #89B86E;
 }
 
 nav .button-login {
@@ -60,6 +72,11 @@ nav .button-login {
     background-color: #3C493F;
     padding: 10px 24px;
     font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+nav .button-login:hover {
+    background-color: #89B86E;
 }
 
 .hero-sec {
@@ -92,8 +109,13 @@ nav .button-login {
 .main-text .button-join {
     color: #FAFAF2;
     background-color: #3C493F;
-    padding: 14px 28px;
-    font-size: 14px;
+    padding: 16px 30px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.main-text .button-join:hover {
+    background-color: #89B86E;
 }
 
 .advantages {
@@ -107,6 +129,13 @@ nav .button-login {
 .advantages .advantage {
     width: 30%;
     background-color: #C6A15B;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.advantages .advantage:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .advantage .content {
@@ -272,6 +301,11 @@ footer .copy .icons {
 footer .copy .icons a i {
     font-size: 24px;
     color: #3C493F;
+    transition: all 0.3s ease;
+}
+
+footer .copy .icons a i:hover {
+    color: #89B86E;
 }
 
 footer .copy p {
@@ -374,6 +408,12 @@ footer > p {
     color: #3C493F;
     font-size: 20px;
     font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.market-list .categories a:hover,
+.help-list .categories a:hover {
+    color: #89B86E;
 }
 
 .market-list .cards {
@@ -388,11 +428,19 @@ footer > p {
 .market-list .cards .card {
     display: flex;
     flex-direction: column;
-    padding: 30px 40px;
+    overflow: hidden;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     background-color: #3C493F;
     width: 30%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.market-list .cards .card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .market-list .cards .card h3 {
@@ -405,17 +453,20 @@ footer > p {
     font-size: 14px;
     color: #EDEDED;
     text-align: center;
+    width: 65%;
 }
 
 .market-list .cards .card p.price {
-    font-size: 22px;
+    font-size: 30px;
     color: #FAFAF2;
     font-weight: 500;
+    padding-bottom: 40px;
+    font-family: 'Cormorant-Garamond';
 }
 
 .market-list .cards .card img {
-    height: 150px;
-    width: 180px;
+    height: 350px;
+    width: 100%;
 }
 
 /* about */
